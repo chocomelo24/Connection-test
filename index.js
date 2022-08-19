@@ -4,6 +4,7 @@ const app = express(); // Initialize express as an app variable
 app.set("port", process.env.PORT || 6969); // Set the port
 app.use(express.json()); // Enable the server to handle JSON requests
 app.use(cors()); // Dont let local development give errors
+const path = require("path");
 app.get("/", (req, res) => {
   res.json({ msg: "Hey There Stranger" });
 });
