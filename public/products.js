@@ -1,6 +1,6 @@
 let products = [];
 const productContainer = document.getElementById("products-data");
-fetch("https://node-pair.herokuapp.com/products")
+fetch("https://connnection-test.herokuapp.com/products")
   .then((res) => res.json())
   .then((data) => {
     products = data;
