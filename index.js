@@ -25,7 +25,7 @@ app.get("products", function (req, res) {
 });
 
 app.listen(app.get("port"), () => {
-  console.log(`https://connnection-test.herokuapp.com/:${app.get("port")}`);
+  console.log(`https://localhost:${app.get("port")}`);
   console.log("Press Ctrl+C to exit server");
 });
 
