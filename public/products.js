@@ -22,6 +22,7 @@ function showproducts(products) {
     <p class="card-text">${product.category}</p>
     <p class="card-text">${product.create_date}</p>
     <p class="card-text">${product.stock}</p>
+    ${product.thumbnail}
   </div>
 </div>
 </div>
