@@ -15,12 +15,10 @@ function showproducts(products) {
       <div class="card" style="width: 18rem;">
   <img src="${product.image}" class="card-img-top">
   <div class="card-body">
-    <p class="card-text">${product.sku}</p>
+  <p class="card-text">${product.sku}</p>
     <p class="card-text">${product.name}</p>
     <p class="card-text">R${product.price}</p>
-    <p class="card-text">${product.weight}</p>
     <p class="card-text">${product.descriptions}</p>
-    <p class="card-text">${product.thumbnail}</p>
     <p class="card-text">${product.category}</p>
     <p class="card-text">${product.create_date}</p>
     <p class="card-text">${product.stock}</p>
