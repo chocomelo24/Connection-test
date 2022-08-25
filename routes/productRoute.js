@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const con = require("../lib/db_connection");
+const middleware = require("../middleware/auth");
+
 router.get("/", (req, res) => {
   try {
     con.query("SELECT * FROM products", (err, result) => {

@@ -1,6 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const con = require("../lib/db_connection");
+const jwt = require("jsonwebtoken");
+const middleware = require("../middleware/auth");
+const bcrypt = require("bcryptjs");
+// const nodemailer = require("nodemailer");
 
 router.get("/", (req, res) => {
   try {

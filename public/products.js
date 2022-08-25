@@ -14,6 +14,7 @@ function showproducts(products) {
     <div class="col-md-3">
       <div class="card" style="width: 18rem;">
   <img src="${product.image}" class="card-img-top">
+  <img src="${product.thumbnail}" class="card-img-top">
   <div class="card-body">
   <p class="card-text">${product.sku}</p>
     <p class="card-text">${product.name}</p>
@@ -22,7 +23,6 @@ function showproducts(products) {
     <p class="card-text">${product.category}</p>
     <p class="card-text">${product.create_date}</p>
     <p class="card-text">${product.stock}</p>
-    <img src="${product.thumbnail}" class="card-img-top">
   </div>
 </div>
 </div>
