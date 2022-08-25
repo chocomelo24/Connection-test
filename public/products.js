@@ -13,19 +13,33 @@ function showproducts(products) {
     productContainer.innerHTML += `
     <div class="col-md-3">
       <div class="card" style="width: 18rem;">
-  <img src="${product.image}" class="card-img-top">
-  <img src="${product.thumbnail}" class="card-img-top">
+  " class="card-img-top">
+   class="card-img-top">
   <div class="card-body">
-  <p class="card-text">${product.sku}</p>
-    <p class="card-text">${product.name}</p>
-    <p class="card-text">R${product.price}</p>
-    <p class="card-text">${product.descriptions}</p>
-    <p class="card-text">${product.category}</p>
-    <p class="card-text">${product.create_date}</p>
-    <p class="card-text">${product.stock}</p>
-  </div>
-</div>
-</div>
+  <table cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                  <tr>
+                  <td><img src="${product.image}"</img></td>
+                  <td><img src="${product.thumbnail}"</img></td>
+                    <td>${product.sku}</td>
+                    <td>${product.name} </td>
+                    <td> R${product.price}</td>
+                    <td> ${product.descriptions}</td>
+                    <td>${product.category}</td>
+                    <td>${product.create_date}</td>
+                    <td>  ${product.stock}</td>
+                
+                  </tr>
+                </tbody>
+              </table>
+ 
+   
+  
+  
+   
+   
+ 
+ 
     `;
   });
 }
