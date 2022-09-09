@@ -130,7 +130,10 @@ router.post("/register", (req, res) => {
     con.query(sql, user, (err, result) => {
       if (err) throw err;
       console.log(result);
-      res.send(`User ${(user.full_name, user.email)} created successfully`);
+      // res.send(`User ${(user.full_name, user.email)} created successfully`);
+      res.json({
+        msg : 'U are in'
+      })
     });
   } catch (error) {
     console.log(error);

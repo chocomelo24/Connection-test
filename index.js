@@ -1,23 +1,27 @@
 const express = require("express"); // Used to set up a server
 const cors = require("cors"); // Used to prevent errors when working locally
 const app = express(); // Initialize express as an app variable
+const cartRoute = require("./routes/cartRoute")
+const userRoute = require("./routes/userRoute");
+const productsRoute = require("./routes/productRoute");
+const path = require("path");
+const staticPath = path.join(__dirname + "public");
+
+
+
 app.set("port", process.env.PORT || 6969); // Set the port
 app.use(express.json()); // Enable the server to handle JSON requests
+
 app.use(cors()); // Dont let local development give errors
-const path = require("path");
 app.get("/", (req, res) => {
   res.json({ msg: "Hey There Stranger" });
 });
 
-const staticPath = path.join(__dirname + "public");
 // connecting my index.html
 app.use(express.static(staticPath));
-
-const userRoute = require("./routes/userRoute");
 app.use("/users", userRoute);
-
-const productsRoute = require("./routes/productRoute");
 app.use("/products", productsRoute);
+app.use( cartRoute);
 
 app.use(express.static("public"));
 app.get("products", function (req, res) {

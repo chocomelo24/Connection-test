@@ -1,7 +1,6 @@
 {
   "name": "test-api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,5 +22,18 @@
     "mysql": "^2.18.1",
     "path": "^0.12.7",
     "readme": "^0.7.0"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chocomelo24/Connection-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chocomelo24/Connection-test/issues"
+  },
+  "homepage": "https://github.com/chocomelo24/Connection-test#readme",
+  "description": ""
 }
